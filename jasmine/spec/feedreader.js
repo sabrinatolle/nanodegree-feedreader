@@ -33,7 +33,9 @@ $(function() {
          */
 
          it ('url defined', function() {
-
+            for(let feed of allFeeds) {
+                console.log(feed);
+            }
          });
 
 
