@@ -11,7 +11,7 @@ var allFeeds = [
     {
         name: 'Udacity Blog',
         //testing the test array is missing a url property
-       // url: 'http://blog.udacity.com/feed'
+        url: 'http://blog.udacity.com/feed'
     }, {
         name: 'CSS Tricks', // testing the test url property length of 0
         url: ' 
