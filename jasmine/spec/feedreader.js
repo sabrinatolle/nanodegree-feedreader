@@ -90,7 +90,7 @@ $(function() {
             
 // getting and testing menu icon, storing menu icon element in a variable and using click method to stimulate.
               menu.click();
-              expect(body.classList.contains('menu-hidden')).toBe(true);
+              expect(body.classList.contains('menu-hidden')).toBe(false);
           });
     });
 
