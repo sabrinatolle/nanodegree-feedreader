@@ -126,7 +126,7 @@ $(function() {
 
         // Avoid duplicated setup
         // Initial loaded feed setup
-        var initFeedSelection;
+        let initFeedSelection;
         beforeEach(function(done) {
           loadFeed(0, function() {
             initFeedSelection = document.querySelector(".feed").innerHTML;
@@ -144,7 +144,7 @@ $(function() {
         // Make sure when new feed is loaded using loadFeed function,
         // the content changes
         it("changes its loaded content", function(done) {
-          var newFeedSelection = document.querySelector(".feed").innerHTML;
+          let newFeedSelection = document.querySelector(".feed").innerHTML;
           expect(initFeedSelection).not.toBe(newFeedSelection);
           done();
         });
