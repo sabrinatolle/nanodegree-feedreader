@@ -14,7 +14,7 @@ var allFeeds = [
         url: 'http://blog.udacity.com/feed'
     }, {
         name: 'CSS Tricks', // testing the test url property length of 0
-        url: ' 
+        url: 'http://feeds.feedburner.com/CssTricks' 
     }, {
         name: 'HTML5 Rocks',
         url: 'http://feeds.feedburner.com/html5rocks'
