@@ -109,7 +109,7 @@ $(function() {
          */
 
          //pass a function that lets our Jasmine test know that our before each function
-         // has finished (done).
+         // has finished (done)
         beforeEach(function(done) {
             loadFeed(0, done);
         });
@@ -122,9 +122,33 @@ $(function() {
     });
 
     /* TODO: Write a new test suite named "New Feed Selection" */
+    describe("New Feed Selection", function() {
 
-        /* TODO: Write a test that ensures when a new feed is loaded
+        // Avoid duplicated setup
+        // Initial loaded feed setup
+        var initFeedSelection;
+        beforeEach(function(done) {
+          loadFeed(0, function() {
+            initFeedSelection = document.querySelector(".feed").innerHTML;
+    
+            loadFeed(1, function() {
+              done();
+            });
+          });
+        });
+     /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
-}());
+
+        // Make sure when new feed is loaded using loadFeed function,
+        // the content changes
+        it("changes its loaded content", function(done) {
+          var newFeedSelection = document.querySelector(".feed").innerHTML;
+          expect(initFeedSelection).not.toBe(newFeedSelection);
+          done();
+        });
+      });
+    
+    }());
+        
