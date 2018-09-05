@@ -10,10 +10,11 @@
 var allFeeds = [
     {
         name: 'Udacity Blog',
-        url: 'http://blog.udacity.com/feed'
+        //testing the test array is missing a url property
+       // url: 'http://blog.udacity.com/feed'
     }, {
-        name: 'CSS Tricks',
-        url: 'http://feeds.feedburner.com/CssTricks'
+        name: 'CSS Tricks', // testing the test url property length of 0
+        url: ' 
     }, {
         name: 'HTML5 Rocks',
         url: 'http://feeds.feedburner.com/html5rocks'
