@@ -113,14 +113,15 @@ $(function() {
         beforeEach(function(done) {
             loadFeed(0, done);
         });
+        
+        
+        
+        it('should loadFeed and render the entry and .feed container', function () {
+            expect($('.feed').has('.entry').length).not.toBe(0);
+        });
+     });
 
-    it('completes work', function() {
-        const feed = document.querySelector('.feed');
-        expect(feed.children.length > 0).toBe(true);
-    });
-
-    });
-
+    
     /* TODO: Write a new test suite named "New Feed Selection" */
     describe("New Feed Selection", function() {
 
